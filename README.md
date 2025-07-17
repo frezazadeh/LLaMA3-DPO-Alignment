@@ -38,7 +38,7 @@ LLaMA3-DPO-Alignment/
 #### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/frezazadeh/LLaMA3-DPO-Alignment.git](https://github.com/frezazadeh/LLaMA3-DPO-Alignment.git)
+git clone https://github.com/frezazadeh/LLaMA3-DPO-Alignment.git
 cd LLaMA3-DPO-Alignment
 ```
 

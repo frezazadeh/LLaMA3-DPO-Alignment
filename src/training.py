@@ -66,8 +66,12 @@ def train_model(
     )
 
     trainer = DPOTrainer(
-        model=model, args=dpo_cfg, train_dataset=processed,
-        tokenizer=tokenizer, peft_config=lora_cfg, ref_model=None,
+        model=model,
+        args=dpo_cfg,
+        train_dataset=processed,
+        processing_class=tokenizer,
+        peft_config=lora_cfg,
+        ref_model=None,
     )
 
     logger.info("Starting DPO training...")

@@ -43,10 +43,9 @@ def train_model(
 
     # Load base model
     model = AutoModelForCausalLM.from_pretrained(
-        base_model,
-        device_map={'': 'cpu'} if not torch.cuda.is_available() else 'auto',
-        torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,
-    )
+    base_model,
+    device_map={'': 'cpu'} if not torch.cuda.is_available() else 'auto',
+    torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,)
     model = prepare_model_for_kbit_training(model)
 
     # Apply LoRA

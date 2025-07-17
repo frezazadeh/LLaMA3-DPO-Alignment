@@ -25,7 +25,7 @@ if __name__ == "__main__":
         "--mode", choices=["train", "chat"], required=True,
         help="Choose 'train' to fine-tune or 'chat' to run inference"
     )
-    parser.add_argument("--base_model", default="new_model")
+    parser.add_argument("--base_model", default="unsloth/llama-3-8B")
     parser.add_argument("--dataset", default="Intel/orca_dpo_pairs")
     parser.add_argument("--output_dir", default="llama3_dpo")
     parser.add_argument("--adapter_path", default="llama3_dpo")
